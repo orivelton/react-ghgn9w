@@ -3,6 +3,11 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
 
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+const store = createStore();
+
 class App extends Component {
   state = { count: 0 }
 
